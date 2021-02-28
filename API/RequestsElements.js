@@ -14,6 +14,19 @@ path: "/pathName"
 
 description: "Description of what the Request does"
 
+Headers:
+`
+General headers:
+  apply to both requests and responses, but with no relation to the data transmitted in the body
+
+Request headers:
+  contain more information about the resource to be fetched, or about the client requesting the resource.
+
+Response headers:
+  hold additional information about the response, like its location or about the server providing it
+
+  `
+
 produces:
 // What the request body contains
 - "application/xml"
@@ -34,3 +47,27 @@ responses:
 
   "400":
     description: "Invalid status value"
+
+
+PostBodyExample:
+
+//From swagger pet store:
+
+{
+  "id": 0,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
+  "name": "doggie",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}
