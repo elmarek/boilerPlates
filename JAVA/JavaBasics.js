@@ -44,3 +44,18 @@ ii. If several words are used to form the name of the method, then each first le
 
 public void employeeRecords() // valid syntax
 public void EmployeeRecords() // invalid syntax
+
+
+// MAIN METHOD:
+
+main method: In Java programming language, every application must contain a main method whose signature is:
+public static void main(String[] args)
+
+public: So that JVM can execute the method from anywhere.
+static: Main method is to be called without object.
+The modifiers public and static can be written in either order.
+void: The main method doesn't return anything.
+main(): Name configured in the JVM.
+String[]: The main method accepts a single argument:
+          an array of elements of type String.
+Like in C/C++, main method is the entry point for your application and will subsequently invoke all the other methods required by your program.
