@@ -14,3 +14,33 @@
 
 8.  println(): This method in Java is also used to display a text on the console. It prints the text on the console and the cursor moves to the start of the next line at the console. The next printing takes place from the next line.
 
+
+// SYNTAX
+
+3. Case Sensitivity
+
+Java is a case-sensitive language, which means that the identifiers AB, Ab, aB, and ab are different in Java.
+
+System.out.println("Alice"); // valid syntax
+system.out.println("Alice"); // invalid syntax
+
+4. Class Names
+
+i. The first letter of the 'class' should be in Uppercase
+
+ii. If several words are used to form a name of the class, each inner word’s first letter should be in Upper Case, Underscore are allowed.
+
+'class' MyJavaProgram    // valid syntax
+'class' myJavaProgram    // invalid syntax
+
+5. public static void main(String [] args)
+
+Java program processing starts with the method main().
+
+6. Method Names
+i. All the method names should start with a Lower Case letter.
+
+ii. If several words are used to form the name of the method, then each first letter of the inner word should be in Upper Case, Underscore are allowed.
+
+public void employeeRecords() // valid syntax
+public void EmployeeRecords() // invalid syntax
