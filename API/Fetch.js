@@ -33,8 +33,28 @@ postData('https://example.com/answer', { answer: 42 })
   });
 
 
+// URL Params:
+
+// Iterating over the objects keys and appending it to url
+var url = new URL("https://geo.example.org/api"),
+    params = {lat:35.696233, long:139.570431}
+Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+fetch(url).then(/* … */)
+
+// Examples
+
+fetch(`example.com/go/${id}`, {
+  method: 'GET',
+
+})
 
 
+//backend
+
+app.get('/go/:id', {
+  let id = params.id;
+
+})
 
 // Uploading JSON data:
 
@@ -54,7 +74,6 @@ fetch('https://example.com/profile', {
 .catch((error) => {
   console.error('Error:', error);
 });
-
 
 
 
